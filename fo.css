@@ -1,0 +1,35 @@
+.parent-div {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none; /* disables double clicking which turns hearts blue */
+}
+.heart-objects {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transform-style: preserve-3d;
+}
+.heart-objects div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+}
+
+.heart-objects div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-style: preserve-3d;
+  backface-visibility: visible;
+  opacity: 100%;
+}
